@@ -1,4 +1,4 @@
-.gallery {
+.c-gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -6,14 +6,14 @@
   transition: all 250ms ease;
 }
 
-.gallery-container {
+.c-gallery-container {
   overflow: hidden;
   position: relative;
   width: 1000px;
   margin: 0 auto;
 }
 
-.gallery__item {
+.c-gallery__item {
   list-style: none;
   height: 300px;
   min-width: 1000px;
