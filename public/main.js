@@ -1,3 +1,5 @@
+
+/* Time-transition photoslide */
 var gallery = document.querySelector('.js-gallery')
 var galleryItems = gallery.querySelectorAll('.js-gallery-item')
 
@@ -24,3 +26,5 @@ function transitionSlide( e ) {
   gallery.style.transform = "translateX(-" + slideWidth * (currentSlide - 1) + "px)"
   console.log( currentSlide )
 }
+
+/* Setup AJAX post to server DB */
