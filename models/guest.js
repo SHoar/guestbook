@@ -1,5 +1,7 @@
 var mongoose = require('mongoose')
 var Schema = mongoose.Schema
+var MongoDB_URI = require ('../index')
+
 
 var guestSchema = new Schema({
   name: String,
