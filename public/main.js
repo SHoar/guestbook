@@ -27,4 +27,24 @@ function transitionSlide( e ) {
   console.log( currentSlide )
 }
 
+// comments working with no saving
+var form = document.querySelector('form')
+console.log(form);
+var button = document.querySelector('button')
+var commentList = document.querySelector('ul')
+console.log(toDoList);
+
+function formEventHandler( event) {
+  var formValue = form.querySelector('input').value
+  var newLI = document.createElement('li')
+  newLI.textContent = formValue
+  newLI.setAttribute("class", "todo-list-item")
+  console.log(newLI);
+  commentList.appendChild(newLI)
+  document.querySelector('input').value=''
+}
+
+button.addEventListener("click", formEventHandler)
+
+
 /* Setup AJAX post to server DB */

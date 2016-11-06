@@ -6,7 +6,9 @@ var bcrypt = require('bcryptjs')
 var session = require('express-session')
 var message = require('express-messages')
 var mongoose = require('mongoose')
-mongoose.connect("mongodb://localhost:27017/guestbook");
+var MongoDB_URI = 'mongodb://ds049496.mlab.com:49496/guestbook'
+
+mongoose.connect(MongoDB_URI);
 var passport = require('passport')
 
 
