@@ -6,9 +6,9 @@ var bcrypt = require('bcryptjs')
 var session = require('express-session')
 var message = require('express-messages')
 var mongoose = require('mongoose')
-var MongoDB_URI = 'mongodb://heroku_zzm79phh:ibbdlioorq3b9vede0g6n3q49q@ds145997.mlab.com:45997/heroku_zzm79phh'
 
-mongoose.connect(MongoDB_URI);
+var MongoDB_URI = 'mongodb://heroku_zzm79phh:ibbdlioorq3b9vede0g6n3q49q@ds145997.mlab.com:45997/heroku_zzm79phh'
+mongoose.connect('MongoDB_URI');
 var passport = require('passport')
 
 
